@@ -157,3 +157,20 @@ footer {
   font-size: 0.95em;
   opacity: 0.8;
   }
+/* 🌟 Title Entrance Animation */
+@keyframes glowFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  }
+}
+
+.animated-title {
+  animation: glowFade 1.2s ease-out forwards;
+  }
