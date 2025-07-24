@@ -1,83 +1,117 @@
-/* Reset & Base */
-body {
+/* 🔁 Base Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Georgia', serif;
-  color: #f4f4f4;
-  text-align: center;
-  background-color: #000; /* fallback */
-  background-repeat: no-repeat;
+  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+  color: #f5f5f5;
   background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-/* Cover Container */
-.cover-container {
-  padding-top: 20vh;
-  padding-bottom: 10vh;
-  backdrop-filter: blur(2px);
+/* 🌟 Generic Containers */
+.hero-section,
+.preface-container,
+.chapter-container,
+.character-container,
+.latest-entry-container,
+.empty-container {
+  max-width: 800px;
+  margin: 10vh auto;
+  padding: 60px 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  backdrop-filter: blur(4px);
 }
 
-/* Title & Subtitle */
-.book-title {
+/* 🖋️ Titles */
+.book-title,
+.section-title {
   font-size: 3em;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 6px #222;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 3px 3px 8px #000;
 }
 
 .subtitle {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  opacity: 0.85;
+}
+
+/* 📜 Text Blocks */
+.preface-text,
+.chapter-text,
+.character-text,
+.latest-text,
+.empty-text {
   font-size: 1.2em;
-  margin-bottom: 30px;
-  opacity: 0.8;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px #000;
 }
 
-/* Enter Button */
-.enter-button {
+/* 🧭 Navigation Buttons */
+.enter-button,
+.back-button {
   display: inline-block;
-  padding: 12px 28px;
-  font-size: 1em;
+  font-size: 1.1em;
+  padding: 14px 32px;
   background-color: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  border: 1px solid #aaa;
+  color: #f5f5f5;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+  margin-top: 20px;
 }
 
-.enter-button:hover {
+.enter-button:hover,
+.back-button:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  font-size: 0.9em;
-  color: #ccc;
-  display: flex;
-  justify-content: space-around;
-  opacity: 0.8;
-  }
-/* Preface Container */
-.preface-container {
-  max-width: 700px;
-  margin: 15vh auto;
-  background-color: rgba(0, 0, 0, 0.6); /* adds subtle contrast */
-  padding: 40px;
+/* 👥 Character Profiles */
+.character-card {
+  background-color: rgba(255,255,255,0.04);
+  padding: 20px;
+  margin: 30px auto;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
-.section-title {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px #222;
+.character-name {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #e2e2e2;
 }
 
-.preface-text {
+.character-description {
   font-size: 1.1em;
-  line-height: 1.6;
-  opacity: 0.95;
-  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+/* 🧭 Footer Styling */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 10px;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.95em;
+  opacity: 0.8;
   }
