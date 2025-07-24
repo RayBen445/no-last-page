@@ -59,3 +59,25 @@ footer {
   justify-content: space-around;
   opacity: 0.8;
   }
+/* Preface Container */
+.preface-container {
+  max-width: 700px;
+  margin: 15vh auto;
+  background-color: rgba(0, 0, 0, 0.6); /* adds subtle contrast */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.preface-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 40px;
+  }
