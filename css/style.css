@@ -1,0 +1,61 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: #f4f4f4;
+  text-align: center;
+  background-color: #000; /* fallback */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Cover Container */
+.cover-container {
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  backdrop-filter: blur(2px);
+}
+
+/* Title & Subtitle */
+.book-title {
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px #222;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* Enter Button */
+.enter-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.enter-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 0.9em;
+  color: #ccc;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.8;
+  }
